@@ -15,6 +15,7 @@ ___
 * I was prompted "Are you sure you want to continue connecting(yes/no/[fingerprint])? and said yes and put in my password
 
 3) Commands
-![Screenshot](Commands.png)
-*
+![Screenshot](Command.png)
+* After I connected to the server I tried multiple commands like cd ~, ls lat, cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/, etc
+* It was interesting seeing the information be presented after typing in the command, or changing the directory.
 

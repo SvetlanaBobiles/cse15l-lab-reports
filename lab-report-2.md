@@ -2,7 +2,7 @@
 
 **Code:**
 
-> import java.io.IOException;
+import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
@@ -10,7 +10,7 @@ class Handler implements URLHandler {
     // various requests.
     String message = "";
 
->    public String handleRequest(URI url) 
+    public String handleRequest(URI url) 
     {
         if(url.getPath().contains("/add-message"))
         {
@@ -21,7 +21,7 @@ class Handler implements URLHandler {
             }
         }
 
->        return message;
+        return message;
     }
 }
 
@@ -36,10 +36,11 @@ public class StringServer
             return;
         }
 
->        int port = Integer.parseInt(args[0]);
+        int port = Integer.parseInt(args[0]);
 
->        Server.start(port, new Handler());
->    }
+        Server.start(port, new Handler());
+    }
 }
+
 
 

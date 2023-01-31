@@ -1,7 +1,7 @@
 # CSE 15L Lab Report 2
 
 
-##Part 1:
+## Part 1:
 
 **Code:**
 
@@ -59,7 +59,7 @@
 * I also made an instance variable to keep track of the strings that were added.
 * The values of the class was changed because the instance variable 'message' contained "Svetlana Bobiles" but after the user wrote "/add-message?s=is%20cool" it added the new string, "is cool" to the variable message and on a new line.
 
-##Part 2:
+## Part 2:
 
 **Failure Inducing Input:**
 
@@ -80,10 +80,28 @@
         assertArrayEquals(new int[]{ 3 }, input1);
     }
 
-**JUnit**
+**Symptom**
 
+![Screenshot](JUnit_test.png)
 
+**Original Code**
 
+    for(int i = 0; i < arr.length; i += 1) 
+    {
+      arr[i] = arr[arr.length - i - 1];
+    }
 
+**My Fixed Code**
 
+    for(int i = 0; i < arr.length/2; i += 1) 
+    {
+      int temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length-i-1] = temp;
+    }
+    
+The original code was a for loop that assigned the value of what the array would be like in reverse. But the issue was that once it reaches halfway it repeats itself because the beginning of the array was already replaced, so the second half doesn't have what the array had in the beginning. So I fixed this by creating a temporary variable to keep what the element was at the i index and replaced 2 indexes at the same time. Since I'm doing 2 at the same time I also split the for loop length in half, so it won't create an out of bounds error.
 
+## Part 3:
+
+Something I learned from the past 2 labs was how github desktop works and how it's useful in committing changes to the server. It was also interesting experimenting with the URLHandler Interface and creating different code, like the "search engine" or trying out the different paths and queries in NumberServer.

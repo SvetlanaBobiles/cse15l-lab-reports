@@ -99,6 +99,10 @@
       arr[i] = arr[arr.length - i - 1];
       arr[arr.length-i-1] = temp;
     }
+
+**Junit fixed code**
+
+![Screenshot](fixed_junit.png)
     
 The original code was a for loop that assigned the value of what the array would be like in reverse. But the issue was that once it reaches halfway it repeats itself because the beginning of the array was already replaced, so the second half doesn't have what the array had in the beginning. So I fixed this by creating a temporary variable to keep what the element was at the i index and replaced 2 indexes at the same time. Since I'm doing 2 at the same time I also split the for loop length in half, so it won't create an out of bounds error.
 

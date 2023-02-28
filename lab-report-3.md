@@ -6,9 +6,9 @@
 
 **Example 1**
 
-'''
+```
 find written_2/ -name WhatToGreek.txt
-'''
+```
 
 **Output**
 

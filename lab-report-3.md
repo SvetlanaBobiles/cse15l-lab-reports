@@ -169,3 +169,5 @@ In this example it only returned the files from Fletcher but if I made the path 
 
 ### Sources Used
 [Link](https://www.tecmint.com/35-practical-examples-of-linux-find-command/)
+
+(in case link does not work on pdf: https://www.tecmint.com/35-practical-examples-of-linux-find-command/ )

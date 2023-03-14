@@ -2,7 +2,7 @@
 
 I found lab report 3 to be the most fun because I was able to experiment with new ways to use the command.
 
-##Four Command Line Arguments for Grep
+## Four Command Line Arguments for Grep
 
 ### -c
 
